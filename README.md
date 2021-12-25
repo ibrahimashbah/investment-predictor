@@ -1,4 +1,4 @@
-# stock-predictor-app
+# Forecast-Investment
 
 
 # Reproducing this web app
