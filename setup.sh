@@ -1,9 +1,11 @@
 mkdir -p ~/.streamlit/
+
 echo "[theme]
-primaryColor=’#020202’
-backgroundColor=’#c4c3c3’
-secondaryBackgroundColor=’#ebd316’
-font = ‘sans serif’
+primaryColor='#b88f89'
+backgroundColor='#fafafa'
+secondaryBackgroundColor='#fafafa'
+textColor='#424242'
+font='sans serif'
 [server]
 headless = true
 port = $PORT
