@@ -72,7 +72,7 @@ html_card_header2 = """
 
 # Load Market Data
 read_tickers = pd.read_csv(
-    "https://raw.githubusercontent.com/ibrahimashbah/Forecast-Investment/main/scripts_list.csv?token=AW5D2PIRFFLVGXAC66W7OSDBY4GHG")
+    "https://raw.githubusercontent.com/ibrahimashbah/stock-predictor-app/main/scripts_list.csv")
 stocks = read_tickers['SYMBOL']
 
 
