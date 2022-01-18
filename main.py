@@ -114,8 +114,8 @@ A portfolio forecast app to predict its estimated value in the future.
 ''')
 
 # introductry video
-with st.expander("Watch (30-seconds) overview video"):
-    st.video("https://youtu.be/qZWW2rMjKG4")
+# with st.expander("Watch (30-seconds) overview video"):
+#     st.video("https://youtu.be/qZWW2rMjKG4")
 
 # for stopping autorun from streamlit
 if Predict_button == False:
