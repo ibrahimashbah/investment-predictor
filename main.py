@@ -429,5 +429,5 @@ elif Predict_button == True:
                 - Familiar with Machine Learning techniques, Pandas, NumPy and SciPy ✅
         """)
     st.info(
-        "This app is maintained by Ibrahim Ashbah. You can learn more about me at [ibrahimashbah.com](http://ibrahimashbah.de/).")
+        "This app is maintained by Ibrahim Ashbah. You can learn more about me at [ibrahimashbah](https://www.linkedin.com/in/ibrahimashbah/).")
     st.stop()
