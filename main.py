@@ -138,7 +138,7 @@ elif Predict_button == True:
 
     graph_placeholder = st.empty()
     graph_placeholder.warning(
-        "Crunshing +3 years of historical data, please wait...⌛")
+        "We are fetching live data and cooking +3 years of historical data, please wait...⌛")
 
     def load_stocks_data(tickers_list):
         stocks_df = []
