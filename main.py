@@ -36,17 +36,17 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #002D40;">
-  <a class="navbar-brand" href="http://ibrahimashbah.de/" target="_blank">Ibrahim Ashbah</a>
+  <a class="navbar-brand" href="https://www.linkedin.com/in/ibrahimashbah/" target="_blank">Ibrahim Abdulqawi</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="http://ibrahimashbah.de/" target="_blank">Home</a>
+        
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/ibrahim-al-ashbah/" target="_blank">LinkedIn</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/ibrahimashbah/" target="_blank">LinkedIn</a>
     </ul>
   </div>
 </nav>
