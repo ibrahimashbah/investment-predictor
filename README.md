@@ -1,6 +1,6 @@
 # Forecast-Investment
 
 
-# Try the final web app:
+# Try the web app:
 https://predict-portfolio.herokuapp.com/
 
