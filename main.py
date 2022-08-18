@@ -43,7 +43,7 @@ st.markdown("""
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        
+        <a class="nav-link" href="http://ibrahimashbah.de/" target="_blank">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://www.linkedin.com/in/ibrahimashbah/" target="_blank">LinkedIn</a>
