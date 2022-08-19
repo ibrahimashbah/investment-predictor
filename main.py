@@ -360,22 +360,22 @@ elif Predict_button == True:
             profit_change, industries, regions)
         if final_meter <= 1:
             st.image(
-                "https://github.com/ibrahimashbah/stock-predictor-app/raw/main/imgs/Riskometer%2016.png", width=170)
+                "https://github.com/ibrahimashbah/investment-predictor/raw/main/meters/Riskometer%2016.png", width=170)
         elif final_meter == 2:
             st.image(
-                "https://github.com/ibrahimashbah/stock-predictor-app/raw/main/imgs/Riskometer%2026.png", width=170)
+                "https://github.com/ibrahimashbah/investment-predictor/raw/main/meters/Riskometer%2026.png", width=170)
         elif final_meter == 3:
             st.image(
-                "https://github.com/ibrahimashbah/stock-predictor-app/raw/main/imgs/Riskometer%2036.png", width=170)
+                "https://github.com/ibrahimashbah/investment-predictor/raw/main/meters/Riskometer%2036.png", width=170)
         elif final_meter == 4:
             st.image(
-                "https://github.com/ibrahimashbah/stock-predictor-app/raw/main/imgs/Riskometer%2046.png", width=170)
+                "https://github.com/ibrahimashbah/investment-predictor/raw/main/meters/Riskometer%2046.png", width=170)
         elif final_meter == 5:
             st.image(
-                "https://github.com/ibrahimashbah/stock-predictor-app/raw/main/imgs/Riskometer%2056.png", width=170)
+                "https://github.com/ibrahimashbah/investment-predictor/raw/main/meters/Riskometer%2056.png", width=170)
         elif final_meter >= 6:
             st.image(
-                "https://github.com/ibrahimashbah/stock-predictor-app/raw/main/imgs/Riskometer%2066.png", width=170)
+                "https://github.com/ibrahimashbah/investment-predictor/raw/main/meters/Riskometer%2066.png", width=170)
 
     with col3:
         st.write("")
