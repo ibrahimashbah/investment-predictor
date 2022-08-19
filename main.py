@@ -109,8 +109,8 @@ st.sidebar.markdown("")
 
 
 # Title
-st.markdown('''# **Portfolio Forecast 📊 **
-Simple tool for analyzing stocks historical prices and predict future value. This app web scrapes, cleans, reformates, stores, trains, calculates and draws charts at runtime. Project Repository: [GitHub](https://github.com/ibrahimashbah/Forecast-Investment)  
+st.title('Investment Predictor')
+st.markdown(''' Simple tool for analyzing stocks historical prices and predict future value. This app web scrapes, cleans, reformates, stores, trains, calculates and draws charts at runtime. Project Repository: [GitHub](https://github.com/ibrahimashbah/Forecast-Investment)  
 ''')
 with st.expander("What are the necessery skills to build like this app? "):
     st.write("""
