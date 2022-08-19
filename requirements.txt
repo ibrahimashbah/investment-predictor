@@ -12,6 +12,6 @@ matplotlib
 convertdate
 pystan==2.19.1.1
 yfinance
-streamlit
+streamlit==1.2.0
 plotly
 fbprophet
