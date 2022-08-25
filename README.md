@@ -1,3 +1,3 @@
 # Try the web app:
-https://predict-portfolio.herokuapp.com/
+https://investment-predictor.herokuapp.com/
 
