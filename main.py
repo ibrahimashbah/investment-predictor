@@ -99,7 +99,7 @@ st.markdown(''' Simple app for analyzing stocks historical prices and predicting
 # for stopping autorun from streamlit
 if Predict_button == False:
     st.info(
-        'On the left sidebar, set your preferred values then Hit the "Predict" button')
+        'On the left sidebar, set your preferred values then press on "Predict" button')
 elif Predict_button == True:
 
     if len(selected_stock) == 0:
