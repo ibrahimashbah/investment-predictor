@@ -18,7 +18,7 @@ import tickerfile
 
 # Page configration details
 st.set_page_config(
-    page_title="Portfolio Forecast",
+    page_title="Investment Predictor",
     page_icon="📊",
 )
 
@@ -32,39 +32,21 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# nav bar
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
-st.markdown("""
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #002D40;">
-  <a class="navbar-brand" href="https://www.linkedin.com/in/ibrahimashbah/" target="_blank">Ibrahim Abdulqawi</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="http://ibrahimashbah.de/" target="_blank">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/ibrahimashbah/" target="_blank">LinkedIn</a>
-    </ul>
-  </div>
-</nav>
-""", unsafe_allow_html=True)
-
+# Building Predicted Value Card
 html_card_header1 = """
     <div class="card">
-    
+
     <div class="card-body" style="border-radius: 0px 0px 0px 0px; background:#1AA6B7; padding-top: 5px; width: 250px; height: 50px;">
-        <h5 class="card-title" style="background-color:#1AA6B7; color:#ffffff; font-family:sans serif; text-align: center; padding: 8px 0;">Investment value</h5>
+        <h5 class="card-title" style="background-color:#1AA6B7; color:#ffffff; font-family: 'Source Sans Pro'; text-align: center; padding: 8px 0;">Predicted Value</h5>
     </div>
     </div>
     """
+# Building Gains/Losses Card
 html_card_header2 = """
     <div class="card">
-    
+
     <div class="card-body" style="border-radius: 0px 0px 0px 0px; background:#1AA6B7; padding-top: 5px; width: 250px; height: 50px;">
-        <h5 class="card-title" style="background-color:#1AA6B7; color:#ffffff; font-family:sans serif; text-align: center; padding: 8px 0;">Gains/Losses</h5>
+        <h5 class="card-title" style="background-color:#1AA6B7; color:#ffffff; font-family: 'Source Sans Pro'; text-align: center; padding: 8px 0;">Gains/Losses</h5>
     </div>
     </div>
     """
@@ -109,24 +91,10 @@ st.sidebar.markdown("")
 
 
 # Title
-st.title('Investment Predictor')
-st.markdown(''' Simple tool for analyzing stocks historical prices and predict future value. This app web scrapes, cleans, reformates, stores, trains, calculates and draws charts at runtime. Project Repository: [GitHub](https://github.com/ibrahimashbah/Forecast-Investment)  
+st.title('Investment Predictor 📊')
+st.markdown(''' Simple app for analyzing stocks historical prices and predicting its future value. This app web scrapes, cleans, reformates, stores, trains, calculates and draws charts. Project Repository: [GitHub](https://github.com/ibrahimashbah/investment-predictor)  
 ''')
-with st.expander("What are the necessery skills to build like this app? "):
-    st.write("""
-                - Web Scrabing ✅
-                - Data Cleaning & Wrangling ✅
-                - Large Data extraction and manuplation from Excel/SQL ✅
-                - Coding knowledge with several languages: Python, HTML/CSS, Jave ✅
-                - Proficiency with Python Libraries (Pandas, NumPy and SciPy) ✅
-                - Good mathematical, data analytics and problem solving skills ✅
-                - Knowledge of advanced statistical techniques and concepts ✅
-                - Analyze model performance and data accuracy ✅
-                - Familiar with Machine Learning fundementals ✅
-        """)
-# introductry video
-# with st.expander("Watch (30-seconds) overview video"):
-#     st.video("https://youtu.be/qZWW2rMjKG4")
+
 
 # for stopping autorun from streamlit
 if Predict_button == False:
@@ -214,7 +182,7 @@ elif Predict_button == True:
         fig1.add_trace(go.Indicator(
             mode="number+delta",
             value=new_investment_value,
-            number={'prefix': "$", 'valueformat': ',f'},
+            number={'prefix': "$", 'valueformat': ',.2f'},
             delta={'reference': investment_Value,
                    'relative': True, 'valueformat': '.0%'},
             domain={'x': [0, 1], 'y': [0, 1]}))
@@ -229,7 +197,7 @@ elif Predict_button == True:
         fig2.add_trace(go.Indicator(
             mode="number+delta",
             value=gain_loss,
-            number={'prefix': "$", 'valueformat': ',f'},
+            number={'prefix': "$", 'valueformat': ',.2f'},
 
             domain={'x': [0, 1], 'y': [0, 1]}))
         fig2.update_layout(autosize=False,
@@ -299,23 +267,6 @@ elif Predict_button == True:
     st.caption(
         "The more your investments is divertised by industry and region the less riskier it will be")
     st.markdown("")
-
-    # get key information then add convert it to dictionary for plotting purpose
-    # list_of_sectors = []
-    # list_of_regions = []
-    # list_of_industries = []
-    # for i in range(len(selected_stock)):
-    #     access_ticker = yf.Ticker(ticker[i])
-    #     add_industry = access_ticker.info['industry']
-    #     add_region = access_ticker.info['country']
-    #     add_sector = access_ticker.info['sector']
-    #     list_of_sectors.append(add_sector)
-    #     list_of_industries.append(add_industry)
-    #     list_of_regions.append(add_region)
-
-    # sectors = dict(Counter(list_of_sectors))
-    # industries = dict(Counter(list_of_industries))
-    # regions = dict(Counter(list_of_regions))
 
     if __name__ == '__main__':
         with Pool(len(ticker)) as p:
@@ -427,18 +378,18 @@ elif Predict_button == True:
 
     st.markdown("")  # empty row
     st.markdown("")  # empty row
-
     with st.expander("What are the necessery skills to build like this app? "):
         st.write("""
-                - Web Scrabing ✅
-                - Data Cleaning & Wrangling ✅
-                - Large Data extraction and manuplation from Excel/SQL ✅
-                - Coding knowledge with several languages: Python, HTML/CSS, Jave ✅
-                - Good mathematical, data analytics and problem solving skills ✅
-                - Knowledge of advanced statistical techniques and concepts ✅
-                - Analyze model performance and data accuracy ✅
-                - Familiar with Machine Learning techniques, Pandas, NumPy and SciPy ✅
-        """)
+                    - Web Scrabing ✅
+                    - Data Cleaning & Wrangling ✅
+                    - Large Data extraction and manuplation from Excel/SQL ✅
+                    - Coding knowledge with several languages: Python, HTML/CSS, Jave ✅
+                    - Proficiency with Python Libraries (Pandas, NumPy and SciPy) ✅
+                    - Good mathematical, data analytics and problem solving skills ✅
+                    - Knowledge of advanced statistical techniques and concepts ✅
+                    - Analyze model performance and data accuracy ✅
+                    - Familiar with Machine Learning fundementals ✅
+            """)
     st.info(
-        "This app is maintained by Ibrahim Ashbah. You can learn more about me at [ibrahimashbah](https://www.linkedin.com/in/ibrahimashbah/).")
+        "This app is maintained by Ibrahim Abdulqawi. You can learn more about me at [LinkedIn](https://www.linkedin.com/in/ibrahimashbah/)")
     st.stop()
