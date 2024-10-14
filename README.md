@@ -2,10 +2,6 @@
 
 Welcome to the **Investment Predictor** project! This web application allows users to analyze historical stock prices and predict future values using advanced time series forecasting techniques. Below are the key features and details about the project:
 
-## Project Overview
-
-- **GitHub Repository**: [Investment Predictor](https://github.com/ibrahimashbah/Investment-Predictor)
-- **Live Application**: [Investment Predictor App](https://investment-predictor.herokuapp.com/)
 
 ## Features
 
@@ -62,8 +58,5 @@ This project is a collaborative effort, showcasing the application of machine le
 
 ## Author
 
-This application is maintained by [Ibrahim Abdulqawi](https://www.linkedin.com/in/ibrahimashbah/). Feel free to connect for more information or inquiries!
+This application is maintained by [Ibrahim Ashbah](https://www.linkedin.com/in/ibrahimashbah/). Feel free to connect for more information or inquiries!
 
----
-
-Explore the **Investment Predictor** project to enhance your investment analysis capabilities and gain insights into stock price predictions!
